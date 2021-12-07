@@ -10,7 +10,7 @@ public class Scorer : MonoBehaviour
     {
         if (other.gameObject.tag != "Hit")
         {
-             hits = hits + 1;
+             hits++;
              Debug.Log("Bumped thing many times:" + hits); 
         }
     }
