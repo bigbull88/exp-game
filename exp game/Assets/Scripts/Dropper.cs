@@ -9,7 +9,7 @@ public class Dropper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<MeshRenderer>(). enabled = false;
     }
 
     // Update is called once per frame
@@ -17,7 +17,7 @@ public class Dropper : MonoBehaviour
     {
         if(Time.time > timeToWait)
         {
-            GetComponent<Rigidbody>().usegravity = enable;
+           // GetComponent<Rigidbody>().usegravity = enable;
             Debug.Log("Time to fall: 3s elapsed" );
         }
         
